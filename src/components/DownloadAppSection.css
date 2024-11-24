@@ -1,0 +1,39 @@
+.download-app-section {
+    background: #f5f5f5;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .download-app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-content h2 {
+    font-size: 36px;
+    color: #212121;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .button-container a img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .button-container a img:hover {
+    transform: scale(1.05);
+  }
+  

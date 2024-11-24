@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from '@mui/material/styles';
+import Navbar from './components/Navbar';
+import HostMeeting from './components/HostMeeting';
+import WhyChooseUs from './components/WhyChooseUs';
+import OurSpaceOverview from './components/OurSpaceOverview';
+import DownloadAppSection from "./components/DownloadAppSection";
+import Footer from "./components/Footer";
+import theme from './styles/theme';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+      <HostMeeting />
+      <WhyChooseUs />
+      <OurSpaceOverview />
+      <DownloadAppSection />
+      <Footer />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
+
